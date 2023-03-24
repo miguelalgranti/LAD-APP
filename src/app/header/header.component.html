@@ -7,11 +7,12 @@
   <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true" style="background-color:  rgb(235, 235, 235);">
     <ul class="nav navbar-nav">
         <li routerLinkActive="active"><a routerLink="/quienes" *ngIf="isAuthenticated" style="color: rgb(123, 120, 120)">¿Quienes Somos?</a></li>
-        <li routerLinkActive="active"><a routerLink="/auth" *ngIf="!isAuthenticated" style="color: rgb(123, 120, 120)">Usuarios</a></li>
-        <li routerLinkActive="active"><a routerLink="/recipes" *ngIf="isAuthenticated" style="color: rgb(123, 120, 120)">Diversidad Religiosa</a></li>
+        <li routerLinkActive="active"><a routerLink="/religiario" *ngIf="isAuthenticated" style="color: rgb(123, 120, 120)">Diversidad Religiosa</a></li>
         <li routerLinkActive="active"><a routerLink="/tecno" *ngIf="isAuthenticated" style="color: rgb(123, 120, 120)">Tecnología</a></li>
         <li routerLinkActive="active"><a routerLink="/consul" *ngIf="isAuthenticated" style="color: rgb(123, 120, 120)">Consultoría</a></li>
-        <li routerLinkActive="active"><a routerLink="/shopping-list" *ngIf="isAuthenticated" style="color: rgb(123, 120, 120)">Recursos</a></li>
+        <li routerLinkActive="active"><a routerLink="/transferencia" *ngIf="isAuthenticated" style="color: rgb(123, 120, 120)">Transferencia</a></li>
+        <li routerLinkActive="active"><a routerLink="/lista-recursos" *ngIf="isAuthenticated" style="color: rgb(123, 120, 120)">Recursos</a></li>
+        <li routerLinkActive="active"><a routerLink="/auth" *ngIf="!isAuthenticated" style="color: rgb(123, 120, 120)">Usuarios</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
         <li *ngIf="isAuthenticated">
@@ -20,7 +21,7 @@
         <li class="dropdown" appDropdown *ngIf="isAuthenticated">
             <a style="cursor: pointer;" class="dropdown-toggle" role="button" style="color: rgb(123, 120, 120)">Administrar <span class="caret"></span></a>
             <ul class="dropdown-menu">
-                <li><a style="cursor: pointer;" (click)="onSaveData()">Guardar Religiario</a></li>
+                <li><a style="cursor: pointer;" *ngIf="isAuthenticated" (click)="onSaveData()">Guardar Religiario</a></li>
                 <li><a style="cursor: pointer;" (click)="onFetchData()">Cargar Religiario</a></li>
             </ul>
         </li>

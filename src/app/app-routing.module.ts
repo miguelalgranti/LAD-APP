@@ -3,14 +3,16 @@ import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 import { ConsultoraComponent } from "./consultora/consultora.component";
 import { QuienesComponent } from "./quienes/quienes.component";
 import { TecnologiaComponent } from "./tecnologia/tecnologia.component";
+import { TransferenciaComponent } from "./transferencia/transferencia.component";
 
 const appRoutes: Routes = [
 { path: 'quienes', component: QuienesComponent },
 { path: 'tecno', component: TecnologiaComponent },
 { path: 'consul', component: ConsultoraComponent },
-{ path: '', redirectTo: '/recipes', pathMatch: 'full' },
-{path: 'recipes', loadChildren: () => import('./recipes/recipes.module').then(m => m.RecipesModule) },
-{path: 'shopping-list', loadChildren: () => import('./shopping-list/shopping-list.module').then(m => m.ShoppingListModule)},
+{path: 'transferencia', component: TransferenciaComponent },
+{ path: '', redirectTo: '/religiario', pathMatch: 'full' },
+{path: 'religiario', loadChildren: () => import('./recipes/recipes.module').then(m => m.RecipesModule) },
+{path: 'lista-recursos', loadChildren: () => import('./shopping-list/shopping-list.module').then(m => m.ShoppingListModule)},
 {path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)}
 
 ];
