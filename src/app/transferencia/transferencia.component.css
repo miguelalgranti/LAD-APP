@@ -1,0 +1,11 @@
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* cover makes the image stretch the width and height of the container */
+ }
+ col-md-8 {
+    max-width: 100%;
+    height: 100vh;
+ }
+
+ 
