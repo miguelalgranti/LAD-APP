@@ -10,7 +10,7 @@ const appRoutes: Routes = [
 { path: 'tecno', component: TecnologiaComponent },
 { path: 'consul', component: ConsultoraComponent },
 {path: 'transferencia', component: TransferenciaComponent },
-{ path: '', redirectTo: '/religiario', pathMatch: 'full' },
+{ path: '', redirectTo: '/transferencia', pathMatch: 'full' },
 {path: 'religiario', loadChildren: () => import('./recipes/recipes.module').then(m => m.RecipesModule) },
 {path: 'lista-recursos', loadChildren: () => import('./shopping-list/shopping-list.module').then(m => m.ShoppingListModule)},
 {path: 'auth', loadChildren: () => import('./auth/auth.module').then(m => m.AuthModule)}

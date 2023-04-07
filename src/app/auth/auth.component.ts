@@ -43,7 +43,7 @@ constructor( private authService: AuthService, private router: Router, private c
         resData => {
         console.log(resData);
         this.isLoading = false;
-        this.router.navigate(['/religiario']);
+        this.router.navigate(['/transferencia']);
     }, 
     errorMessage => {
         console.log(errorMessage);
