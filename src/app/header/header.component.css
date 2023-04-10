@@ -1,31 +1,30 @@
 
 .navbar-header {
   float: none;
-  overflow: hidden;
-  position:absolute
+ 
 }
 .navbar-toggle {
   display: block;
-  margin: 0%;
-  overflow: hidden;
+ 
+
+}
+.nav-item{
+  text-align: right;
 }
 .navbar-collapse.collapse {
   display: none!important;
-  margin: 0%;
-  overflow: hidden;
+ 
+ 
 }
 .navbar-nav {
   float: none!important;
-  margin: 0%;
-  overflow: hidden;
+
 }
 .navbar-nav>li {
   float: none;
-  margin: 0%;
-  overflow: hidden;
+
 }
 .navbar-collapse.collapse.in{
   display:block !important;
-  margin: 0%;
-  overflow: hidden;
+  
 }
