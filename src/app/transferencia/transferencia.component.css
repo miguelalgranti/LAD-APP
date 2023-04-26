@@ -192,7 +192,7 @@ body {
     );
   background-size: 100vh;
   background-position: 0 0;
-  animation: slide 40s infinite linear;
+  animation: slide 24s infinite linear;
 }
 
 @keyframes slide {

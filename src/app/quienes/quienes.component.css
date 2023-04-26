@@ -1,11 +1,8 @@
-/* Importing fonts from Google */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 
 /* Reseting */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+
     font-family: 'Poppins', sans-serif;
 }
 
@@ -15,21 +12,21 @@ body {
 }
 
 .container {
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
-.container .row .col-lg-4 {
+.container .row .col-lg-3 {
     display: flex;
     justify-content: center;
 }
 
 .card {
-    position: relative;
+    position:relative;
     padding: 0;
-    margin: 0 !important;
+    margin: 5px !important;
     border-radius: 20px;
     overflow: hidden;
-    max-width: 280px;
+    max-width: 220px;
     max-height: 340px;
     cursor: pointer;
     border: none;
@@ -39,12 +36,14 @@ body {
 
 .card .card-image {
     width: 100%;
-    max-height: 340px;
+    max-height: 300px;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
 }
 
 .card .card-image img {
     width: 100%;
-    max-height: 340px;
+    max-height: 300px;
     object-fit: cover;
 }
 
@@ -117,12 +116,7 @@ body {
     font-size: 1.3rem;
 }
 
-@media(max-width: 991.5px) {
-    .container {
-        margin-top: 20px;
-    }
-
-    .container .row .col-lg-4 {
-        margin: 20px 0px;
-    }
-}
+.child {
+    /* Center horizontally*/
+    margin: 0 auto;
+  }
